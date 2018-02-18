@@ -14,7 +14,7 @@ class Expression(object):
         Returns the compile-time type of this expression, i.e. the most specific type that describes
         all the possible values it could take on at runtime. Subclasses must implement this method.
         """
-        raise NotImplementedError(type(self).__name__ + " must implement static_type()")
+        return self
 
     def check_types(self):
         """
